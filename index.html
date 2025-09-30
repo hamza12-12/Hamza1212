@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>بوت أبو يزن</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+    }
+    img {
+      width: 640px;
+      height: 360px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #00f7ff;
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 20px;
+      color: #00f7ff;
+      text-shadow: 0 0 10px #00f7ff;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 10px auto 20px;
+      max-width: 600px;
+      line-height: 1.6;
+      color: #d1d5db;
+    }
+    h2 {
+      font-size: 1.8em;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+    .glow-btn {
+      padding: 12px 25px;
+      font-size: 1em;
+      color: #fff;
+      background: transparent;
+      border: 2px solid #00f7ff;
+      border-radius: 8px;
+      cursor: pointer;
+      margin: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.3s;
+      text-shadow: 0 0 5px #00f7ff;
+    }
+    .glow-btn:hover {
+      background: #00f7ff;
+      color: #0f0c29;
+      box-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="robot-welcome.png" alt="روبوت الذكاء الاصطناعي" />
+    <h1>🤖 أهلاً بك في بوت الذكاء الاصطناعي</h1>
+    <p>اكتشف المحتوى، الصور، والأفكار الإبداعية من خلال هذا البوت.</p>
+    <h2>✨ مقدم من: أبو يزن</h2>
+    <button class="glow-btn" onclick="window.location.href='https://t.me/اسم_البوت_هنا';">ابدأ الآن</button>
+    <button class="glow-btn" onclick="toggleMusic()">🔇 كتم</button>
+  </div>
+
+  <!-- 🎵 مشغل موسيقى -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+    متصفحك لا يدعم تشغيل الصوت.
+  </audio>
+
+  <script>
+    function toggleMusic() {
+      const music = document.getElementById("bgMusic");
+      music.muted = !music.muted;
+    }
+  </script>
+</body>
+</html>
