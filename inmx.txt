@@ -56,5 +56,61 @@
   <!-- غيّر اسم البوت هنا -->
   <a href="https://t.me/اسم_البوت" class="btn">ابدأ الآن</a>
 </body>
-
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>بوت أبو يزن</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Tahoma, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+    }
+    .container {
+      padding: 50px;
+    }
+    .bot-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+    h1 {
+      margin-top: 20px;
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background: #ff5722;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #e64a19;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- صورة البوت -->
+    <img src="bot.png" alt="صورة البوت" class="bot-image">
+    
+    <h1>أهلاً بك في بوت أبو يزن</h1>
+    <p>هنا ممكن تضيف أي رسومات أو تأثيرات إضافية</p>
+    
+    <a href="#" class="btn">ابدأ الآن</a>
+  </div>
+</body>
 </html>
