@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أني واحد – Abu Yazan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>button.btn {
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+}
+  <audio autoplay loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="smoke-layer">
+    <img src="assets/smoke.png" alt="دخان" class="smoke">
+  </div>
+
+  <div class="container">
+    <h1>أني واحد – Abu Yazan</h1>
+    <img src="assets/hero.jpg" alt="هوية البوت" class="hero-image">
+    <p class="tagline">صوتي، بصري، أنا واحد لا يُنسى</p>
+
+    <div class="buttons">
+      <a href="https://t.me/YourBotUsername" class="btn">تواصل عبر تلغرام</a>
+      <a href="https://github.com/YourRepo" class="btn">عرض الكود على GitHub</a>
+      <a href="https://your-payment-link.com" class="btn">اشترك الآن</a>
+    </div> <button onclick="toggleMusic()" class="btn">تشغيل / كتم الصوت</button>
+  </div>
+</body><script>
+  function toggleMusic() {
+    const music = document.getElementById("bg-music");
+    music.muted = !music.muted;
+  }
+</script>
+</html>

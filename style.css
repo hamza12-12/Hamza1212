@@ -1,0 +1,12 @@
+bot-landing-page/
+│button.btn {
+  cursor: pointer;
+  border: none;
+  font-size: 1em;
+}
+├── index.html        ← الصفحة الرئيسية
+├── style.css         ← ملف التنسيق (CSS)
+└── assets/           ← مجلد الصور والموسيقى
+    ├── hero.jpg      ← صورة البوت أو الهوية
+    ├── music.mp3     ← موسيقى الخلفية
+    └── smoke.png     ← تأثير الدخان
