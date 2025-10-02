@@ -1,9 +1,0 @@
-<!doctype html>
-<html>
-<head><meta charset="utf-8"><title>Privacy Policy</title></head>
-<body><h1>سياسة الخصوصية</h1><p>نص بسيط عن جمع البيانات، الاستخدام، والتواصل.</p></body>
-</html><!doctype html>
-<html>
-<head><meta charset="utf-8"><title>Privacy Policy</title></head>
-<body><h1>سياسة الخصوصية</h1><p>نص بسيط عن جمع البيانات، الاستخدام، والتواصل.</p></body>
-</html>
