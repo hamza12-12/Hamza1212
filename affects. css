@@ -1,0 +1,17 @@
+.pulse-effect {
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
