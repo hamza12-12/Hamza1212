@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أني واحد – Abu Yazan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* يمكن وضع الأنيميشن هنا أو في ملف CSS منفصل */
+    .pulse-effect {
+      animation: pulse 2s infinite;
+      box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    .typing-effect {
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid #fff;
+      animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+    }
+    
+    .hover-glow:hover {
+      box-shadow: 0 0 15px 5px #00f7ff;
+      transform: scale(1.05);
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-fade">
+  <audio id="bg-music" autoplay loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+    المتصفح لا يدعم تشغيل الصوت
+  </audio>
+
+  <div class="smoke-layer">
+    <img src="assets/smoke.png" alt="دخان" class="smoke">
+  </div>
+
+  <div class="container">
+    <h1 class="typing-effect">أني واحد – Abu Yazan</h1>
+    <img src="assets/hero.jpg" alt="هوية البوت" class="hero-image pulse-effect">
+    <p class="tagline">صوتي، بصري، أنا واحد لا يُنسى</p>
+
+    <div class="buttons">
+      <a href="https://t.me/YourBotUsername" class="btn hover-glow">تواصل عبر تلغرام</a>
+      <a href="https://github.com/YourRepo" class="btn hover-glow">عرض الكود على GitHub</a>
+      <a href="https://your-payment-link.com" class="btn hover-glow">اشترك الآن</a>
+    </div>
+    
+    <button onclick="toggleMusic()" class="btn hover-glow">تشغيل / كتم الصوت</button>
+  </div>
+
+  <script>
+    function toggleMusic() {
+      const music = document.getElementById("bg-music");
+      music.muted = !music.muted;
+    }
+    
+    // تعريف أنيميشن CSS ديناميكي
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+        70% { box-shadow: 0 0 0 20px rgba(255, 255, 255, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+      }
+      
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      @keyframes blink {
+        50% { border-color: transparent }
+      }
+      
+      @keyframes bgFade {
+        0% { background-color: #0f0c29; }
+        50% { background-color: #302b63; }
+        100% { background-color: #24243e; }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</body>
+</html>
